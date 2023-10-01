@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-principal:   #FFFFFF;
+    --cor-secundario:  #C0C0C0;
+    --cor-botao:       #167BF7;
+    --cor-botaohover:  #4593f3;
+    --cor-fundo:       #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.principal{
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat; 
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.container__descricao{
+    padding: 2em;
+}
+.container__titulo{
+    font-weight: 700;
+    font-size: 28px;
+}
+.container__imagem{
+ margin: 1em 0 2em 0;   
+}
+.container__botao{
+    background-color:var(--cor-botao);
+    color: var(--cor-principal);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;  
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao__secundario{
+    background-color: transparent;
+    border:2px solid var(--cor-principal);
+}
+.container__aviso{
+    color: var(--cor-secundario);
+    font-size: 12px;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-principal);
+    margin-bottom: 0.2em;
+}
+.descricao__texto{
+    color: var(--cor-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--cor-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--cor-principal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 7em 20px 0 20px;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.lista__link{
+    margin-top: 2em;   
+}
+
+.link__nomes{
+    text-decoration: none;
+    color: var(--cor-principal);
+    margin: 0.5em;
+}
+
+.rodape__texto{
+    color: var(--cor-secundario);
+    font-size: 14px;
+    margin: 2em;
+}
+
+/* Criando Pseudoclasses */
+
+.lista__link a:hover{
+    color: var(--cor-botao);
+}
+.lista__link a:active{
+    color: purple;
+}
+.container__botao:hover{
+    color: var(--cor-fundo);
+    background-color: var(--cor-botaohover);
+}
